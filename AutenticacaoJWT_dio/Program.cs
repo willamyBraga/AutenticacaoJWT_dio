@@ -83,8 +83,8 @@ namespace ConsoleAppAuthentication
 
             // Construa o e-mail
             MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("email@aaaaaaaaaaaa.com"); //email destino aqui.
-            mailMessage.To.Add(recipient);
+            mailMessage.From = new MailAddress("emaildestino"); //email destino aqui.
+            mailMessage.To.Add("emaildestino"); //email destino
             mailMessage.Subject = "Assunto do E-mail";
             mailMessage.Body = "Corpo do E-mail";
 
