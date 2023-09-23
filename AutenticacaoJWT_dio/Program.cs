@@ -78,12 +78,12 @@ namespace ConsoleAppAuthentication
             // Configurações do servidor SMTP e credenciais
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
             smtpClient.Port = 587;
-            smtpClient.Credentials = new NetworkCredential("seu_email@example.com", "sua_senha");
+            smtpClient.Credentials = new NetworkCredential("willamybragadesenvolvimento@gmail.com", "lmskxaxeqylqykjq"); //caso queira usar o seu => entre no endereço do site https://myaccount.google.com/security => gerar a senha para o app
             smtpClient.EnableSsl = true;
 
             // Construa o e-mail
             MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("emaildestino@gmail.com");
+            mailMessage.From = new MailAddress("email@aaaaaaaaaaaa.com"); //email destino aqui.
             mailMessage.To.Add(recipient);
             mailMessage.Subject = "Assunto do E-mail";
             mailMessage.Body = "Corpo do E-mail";
